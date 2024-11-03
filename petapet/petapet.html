@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Pet a Pet!</title>
+
+    <style>
+      .prevent-select {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .lime-btn {
+        background-color: #15ff00;
+        border-color: #0ea300;
+      }
+    </style>
+
+  </head>
+
+
+  <!--Popcat--->
+
+  <script>
+
+  function Popcat1()
+  {
+  var img = document.getElementById("image");
+  img.src="images/popcatup.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function Popcat2()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/popcat.png";
+  return false;
+  }
+  </script>
+
+  <!--Doge--->
+  <script>
+
+  function Doge3()
+  {
+  var img = document.getElementById("image");
+  img.src="images/doge3.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function Doge4()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/doge4.png";
+  return false;
+  }
+  </script>
+
+    <!--honk--->
+  <script>
+
+  function honk1()
+  {
+  var img = document.getElementById("image");
+  img.src="images/honk1.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function honk2()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/honk2.png";
+  return false;
+  }
+  </script>
+
+      <!--blobfish--->
+  <script>
+
+  function blobfish1()
+  {
+  var img = document.getElementById("image");
+  img.src="images/blobfish1.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function blobfish2()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/blobfish2.png";
+  return false;
+  }
+  </script>
+
+        <!--capy--->
+  <script>
+
+  function capy1()
+  {
+  var img = document.getElementById("image");
+  img.src="images/capybara1.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function capy2()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/capybara2.png";
+  return false;
+  }
+  </script>
+
+
+
+  <body style="background-color:#bfffb0;">
+
+  <h2>Pet a Pet!</h2>
+
+  <hr style="color:#0ea300">
+  <div style="width:250px; line-height:50%">
+    <img id="image" src="images/popcatup.png" width="75%" height="75%" style="cursor: grab;" draggable="false" class="prevent-select">
+    <img id="image2" src="images/popcat.png" width="75%" height="75%" style="cursor: grabbing;" draggable="false" class="prevent-select">
+  </div>
+
+  <hr style="color:#0ea300">
+  <h3>Choose a pet</h3>
+  <button type="button" onclick="Popcat1(); Popcat2();" class="lime-btn">Popcat</button>
+  <button type="button" onclick="Doge3(); Doge4();" class="lime-btn">Doge</button>
+  <button type="button" onclick="honk1(); honk2();" class="lime-btn">Goose</button>
+  <button type="button" onclick="capy1(); capy2();" class="lime-btn">Capybara</button>
+  <button type="button" onclick="blobfish1(); blobfish2();" class="lime-btn">Blobfish</button>
+  <hr style="color:#0ea300">
+
+
+</html>
