@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Pet a Pet!</title>
+
+    <style>
+      .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+    </style>
+
+  </head>
+
+
+  <!--Popcat--->
+
+  <script>
+
+  function Popcat1()
+  {
+  var img = document.getElementById("image");
+  img.src="images/popcatup.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function Popcat2()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/popcat.png";
+  return false;
+  }
+  </script>
+
+<!--Doge--->
+  <script>
+
+  function Doge3()
+  {
+  var img = document.getElementById("image");
+  img.src="images/doge3.png";
+  return false;
+  }
+
+  </script>
+
+  <script>
+  function Doge4()
+  {
+  var img = document.getElementById("image2");
+  img.src="images/doge4.png";
+  return false;
+  }
+  </script>
+
+
+
+
+  <hr>
+  <div style="width:250px; line-height:50%">
+    <img id="image" src="images/popcatup.png" width="75%" height="50%" style="cursor: grab;" draggable="false" class="prevent-select">
+    <img id="image2" src="images/popcat.png" width="75%" height="50%" style="cursor: grabbing;" draggable="false" class="prevent-select">
+  </div>
+
+  <hr>
+  <h3>Choose a pet</h3>
+  <button type="button" onclick="Popcat1(); Popcat2();">Popcat</button>
+  <button type="button" onclick="Doge3(); Doge4();">Doge</button>
+  <button type="button" onclick="alert('Capybara')" disabled>Capybara</button>
+  <button type="button" onclick="alert('Goose')" disabled>Goose</button>
+  <button type="button" onclick="alert('Blobfish')" disabled>Blobfish</button>
+  <hr>
+
+</html>
