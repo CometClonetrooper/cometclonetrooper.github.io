@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Konwenter Kabanów</title>
+</head>
+<body>
+<h1>Konwenter Kabanów</h1>
+<h2>Kabany → Kilogramy</h2>
+<label for="inputKaban">Kabany:</label>
+<input type="number" id="inputKaban" oninput="convertWeight(this.value)">
+
+<label for="outputKg">Kilogramy:</label>
+<input type="text" id="outputKg" readonly>
+<h2>Kilogramy → Kabany</h2>
+<label for="inputKg2">Kilogramy:</label>
+<input type="number" id="inputKg2" oninput="convertWeight2(this.value)">
+
+<label for="outputKaban2">Kabany:</label>
+<input type="text" id="outputKaban2" readonly>
+
+<script>
+function convertWeight(kaban) {
+    const kg = kaban * 800;
+    document.getElementById("outputKg").value = kg;
+}
+
+function convertWeight2(kg2) {
+    const kaban2 = kg2 / 800;
+    document.getElementById("outputKaban2").value = kaban2;
+}
+</script>
+
+</body>
+</html>
